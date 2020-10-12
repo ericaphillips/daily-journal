@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nashville Software School</title>
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+
+    <body id="home" class="open-left">
+        <div id="offcanvas-left" class="hide">
+            <ul>
+                <li><a href="#" >Journal</a></li>
+                <li><a href="#" >Entry</a></li>
+                <li><a href="#" >List</a></li>
+            </ul>
+        </div>
+        <div class="togglebar">
+            <!-- adds the class of hide to .offcanvas.left -->
+            <div class="toggle" onclick="toggleLeft()">
+                <i class="bars"></i>
+            </div>
+        </div>
+        <div class="center">
+            <header>
+                <h1>Daily Journal</h1>
+                <h3>Erica Phillips</h3>
+            </header>
+        <main id="container">
+        </main>
+        <div class="cal"> <label for="today">Today's date:</label>
+            <input type="date" id="today" name="today's date">
+        </div>
+        <div class="conceptsToday"> <label for="concepts">Concepts covered:</label>
+            <input type="text" id="concepts" name="today's concepts">
+        </div>
+        <div class="journalEntry">Journal Entry (What you learned, how you felt, plans for upcoming days):<br>
+            <textarea rows="6" cols="100"></textarea>
+        </div>
+        <div class="mood"><label for="moodToday">Mood for today:</label>
+        <select name="moods" id="moodToday">
+            <option value="happy">Happy</option>
+            <option value="happy">Fine</option>
+            <option value="happy">Sad</option>
+            <option value="happy">Stressed</option>
+            <option value="happy">Blessed</option>
+        </select>
+        </div>
+        <div class="recordButton">
+            <button type="button">Record Journal Entry</button>
+            </div>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
