@@ -1,3 +1,7 @@
+import { EntryListComponent } from './JournalEntryList.js'
+
+EntryListComponent ()
+
 window.toggleLeft = function() {
     var element = document.getElementById("offcanvas-left");
     element.classList.toggle("hide");
